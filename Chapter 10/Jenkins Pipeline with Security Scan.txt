@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh './build.sh'
+            }
+        }
+        stage('Security Scan') {
+            steps {
+                sh 'trivy image my-app:latest'
+            }
+        }
+    }
+}

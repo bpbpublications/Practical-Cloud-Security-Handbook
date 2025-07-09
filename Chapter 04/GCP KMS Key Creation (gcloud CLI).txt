@@ -1,0 +1,2 @@
+gcloud kms keyrings create my-keyring --location global
+gcloud kms keys create my-key --location global --keyring my-keyring --purpose encryption

@@ -1,0 +1,12 @@
+{
+  "Name": "Reader",
+  "IsCustom": false,
+  "Description": "View everything, but make no changes.",
+  "Actions": [
+    "Microsoft.Authorization/*/read",
+    "Microsoft.Resources/subscriptions/resourceGroups/read",
+    "Microsoft.Resources/subscriptions/resourceGroups/resources/read"
+  ],
+  "NotActions": [],
+  "AssignableScopes": ["/subscriptions/{subscription-id}"]
+}

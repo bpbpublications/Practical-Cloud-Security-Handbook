@@ -1,0 +1,7 @@
+import logging
+
+logger = logging.getLogger('object_level')
+logger.setLevel(logging.INFO)
+
+def access_object(user, object_name):
+    logger.info(f"{user} accessed {object_name}")
